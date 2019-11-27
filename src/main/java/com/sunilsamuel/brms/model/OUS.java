@@ -17,4 +17,9 @@ public class OUS {
 
 	public boolean getAccess() { return this.access; }
 	public void setAccess(boolean access) { this.access = access; }
+
+	@Override
+	public String toString() {
+		return "O: " + organization + ",U: " + unit + ",S: " + subunit + ", access: " + String.valueOf(access);
+	}
 }

@@ -9,7 +9,7 @@ when
 	$ous: OUS(organization.matches(".*"))
 then
 	$ous.setAccess(false);
-	System.out.println("Test 1 rule: " + $ous);
+	System.out.println("Test 1 rule: " + $ous.toString());
 end
 
 rule "Test 2"
@@ -19,7 +19,7 @@ when
 	$ous: OUS(organization == "DHS")
 then
 	$ous.setAccess(true);
-	System.out.println("Test 2 rule: " + $ous);
+	System.out.println("Test 2 rule: " + $ous.toString());
 end
 
 rule "Test 3"
@@ -29,6 +29,6 @@ when
 	$ous: OUS(organization == "DHS", unit == "FEMA")
 then
 	$ous.setAccess(false);
-	System.out.println("Test 3 rule: " + $ous);
+	System.out.println("Test 3 rule: " + $ous.toString());
 end
 
