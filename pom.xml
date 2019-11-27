@@ -7,7 +7,7 @@
 	<packaging>kjar</packaging>
         <name>loan-app</name>
 	<properties>
-		<kie.version>6.4.0.Final-redhat-3</kie.version>
+		<kie.version>7.28.0.Final-redhat-3</kie.version>
 		<!--
 		<cucumber.version>1.2.5</cucumber.version>
 		<codehaus.jackson.version>1.9.13</codehaus.jackson.version>
