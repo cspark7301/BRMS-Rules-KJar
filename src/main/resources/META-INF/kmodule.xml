@@ -8,5 +8,6 @@
 	<kbase name="defaultKieBase" default="true" packages="com.sunilsamuel.brms.rules">
 		<ksession name="defaultStatelessKieSession" type="stateless"
 			default="true" />
+		<ksession name="defaultStatefulKieSession"/>
 	</kbase>
 </kmodule>
