@@ -78,39 +78,6 @@
 				<extensions>true</extensions>
 			</plugin>
 		</plugins>
-		<!-- This pluginManagement is used to fix the following Eclipse error: -->
-		<!-- Plugin execution not covered by lifecycle configuration: org.kie:kie-maven-plugin:xxx.Final:build 
-			(execution: default-build, phase: compile) -->
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>org.kie</groupId>
-										<artifactId>kie-maven-plugin</artifactId>
-										<versionRange>[6.0.0,)</versionRange>
-										<goals>
-											<goal>build</goal>
-											<goal>compile</goal>
-											<goal>injectreactive</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore />
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 
 </project>
