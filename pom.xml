@@ -5,8 +5,7 @@
 	<artifactId>BRMS-Rules-KJar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>kjar</packaging>
-
-
+        <name>loan-app</name>
 	<properties>
 		<kie.version>6.4.0.Final-redhat-3</kie.version>
 		<!--
@@ -73,7 +72,13 @@
 		</dependency>
 		-->
 	</dependencies>
-
+	<repositories>
+		<repository>
+			<id>guvnor-m2-repo</id>
+			<name>Guvnor M2 Repo</name>
+ 			<url>http://localhost:8080/business-central/maven2/</url>
+		</repository>
+	</repositories>
 	<build>
 		<plugins>
 			<plugin>
