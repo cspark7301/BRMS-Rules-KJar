@@ -24,7 +24,7 @@ rule "Test 3"
 salience 3
 activation-group "permision"
 when
-	$ous: OUS(organization == "DHS") and OUS("unit" == "FEMA")
+	$ous: OUS(organization == "DHS", unit == "FEMA")
 then
 	$ous.setAccess(false);
 end
