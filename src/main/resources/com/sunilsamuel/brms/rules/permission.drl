@@ -1,0 +1,31 @@
+package com.sunilsamuel.brms.rules;
+
+import com.sunilsamuel.brms.model.OUS;
+
+rule "Test 1"
+salience 1
+activation group "permision"
+when
+	$ous: OUS(organization.matches(".*"))
+then
+	$ous.setAccess(false);
+end
+
+rule "Test 2"
+salience 2
+activation group "permision"
+when
+	$ous: OUS(organization == "DHS")
+then
+	$ous.setAccess(true);
+end
+
+rule "Test 3"
+salience 3
+activation group "permision"
+when
+	$ous: OUS(organization == "DHS") and OUS("unit" == "FEMA")
+then
+	$ous.setAccess(false);
+end
+
