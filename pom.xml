@@ -153,7 +153,8 @@
 			</dependencies>
 		</profile>
 	</profiles>
-	<dependencies>
+	<dependencyManagement>
+		<dependencies>
 			<dependency>
 				<groupId>org.jboss.bom.brms</groupId>
 				<artifactId>jboss-brms-bpmsuite-bom</artifactId>
